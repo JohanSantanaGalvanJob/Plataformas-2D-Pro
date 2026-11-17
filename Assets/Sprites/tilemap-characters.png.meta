@@ -115,7 +115,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -129,7 +129,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -233,12 +233,12 @@ TextureImporter:
       name: tilemap-characters_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 49
-        width: 22
-        height: 25
+        x: 2
+        y: 50
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: tilemap-characters_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 50
-        width: 22
-        height: 24
+        x: 27
+        y: 51
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: tilemap-characters_2
       rect:
         serializedVersion: 2
-        x: 26
-        y: 25
-        width: 22
-        height: 25
+        x: 52
+        y: 50
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: tilemap-characters_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 49
-        width: 22
-        height: 25
+        x: 77
+        y: 51
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: tilemap-characters_4
       rect:
         serializedVersion: 2
-        x: 76
+        x: 102
         y: 50
-        width: 22
-        height: 24
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: tilemap-characters_5
       rect:
         serializedVersion: 2
-        x: 101
-        y: 49
-        width: 22
-        height: 25
+        x: 127
+        y: 51
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: tilemap-characters_6
       rect:
         serializedVersion: 2
-        x: 126
+        x: 152
         y: 50
-        width: 22
-        height: 24
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: tilemap-characters_7
       rect:
         serializedVersion: 2
-        x: 151
-        y: 49
-        width: 22
-        height: 25
+        x: 177
+        y: 51
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: tilemap-characters_8
       rect:
         serializedVersion: 2
-        x: 176
+        x: 200
         y: 50
-        width: 22
+        width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: tilemap-characters_9
       rect:
         serializedVersion: 2
-        x: 199
-        y: 49
-        width: 25
-        height: 25
+        x: 2
+        y: 25
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: tilemap-characters_10
       rect:
         serializedVersion: 2
-        x: 1
-        y: 24
-        width: 22
-        height: 25
+        x: 27
+        y: 26
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: tilemap-characters_11
       rect:
         serializedVersion: 2
-        x: 52
-        y: 27
-        width: 20
-        height: 20
+        x: 53
+        y: 28
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: tilemap-characters_12
       rect:
         serializedVersion: 2
-        x: 77
-        y: 27
-        width: 20
-        height: 20
+        x: 78
+        y: 28
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: tilemap-characters_13
       rect:
         serializedVersion: 2
-        x: 105
-        y: 28
-        width: 13
-        height: 17
+        x: 106
+        y: 29
+        width: 11
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: tilemap-characters_14
       rect:
         serializedVersion: 2
-        x: 130
-        y: 28
-        width: 13
-        height: 17
+        x: 131
+        y: 29
+        width: 11
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,12 +563,12 @@ TextureImporter:
       name: tilemap-characters_15
       rect:
         serializedVersion: 2
-        x: 153
-        y: 24
-        width: 17
-        height: 20
+        x: 154
+        y: 25
+        width: 15
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: tilemap-characters_16
       rect:
         serializedVersion: 2
-        x: 178
-        y: 24
-        width: 17
-        height: 21
+        x: 179
+        y: 25
+        width: 15
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,12 +607,12 @@ TextureImporter:
       name: tilemap-characters_17
       rect:
         serializedVersion: 2
-        x: 204
-        y: 24
-        width: 17
-        height: 19
+        x: 205
+        y: 25
+        width: 15
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: tilemap-characters_18
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 17
-        height: 14
+        width: 15
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -651,12 +651,12 @@ TextureImporter:
       name: tilemap-characters_19
       rect:
         serializedVersion: 2
-        x: 29
+        x: 30
         y: 0
-        width: 17
-        height: 15
+        width: 15
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: tilemap-characters_20
       rect:
         serializedVersion: 2
-        x: 54
+        x: 55
         y: 0
-        width: 17
-        height: 13
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -695,12 +695,12 @@ TextureImporter:
       name: tilemap-characters_21
       rect:
         serializedVersion: 2
-        x: 74
+        x: 75
         y: 0
-        width: 26
-        height: 22
+        width: 24
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -717,12 +717,12 @@ TextureImporter:
       name: tilemap-characters_22
       rect:
         serializedVersion: 2
-        x: 99
+        x: 100
         y: 0
-        width: 26
-        height: 23
+        width: 24
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -739,12 +739,12 @@ TextureImporter:
       name: tilemap-characters_23
       rect:
         serializedVersion: 2
-        x: 124
+        x: 125
         y: 0
-        width: 26
-        height: 21
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: tilemap-characters_24
       rect:
         serializedVersion: 2
-        x: 152
-        y: 2
-        width: 20
-        height: 19
+        x: 153
+        y: 3
+        width: 18
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -783,12 +783,12 @@ TextureImporter:
       name: tilemap-characters_25
       rect:
         serializedVersion: 2
-        x: 174
-        y: 3
-        width: 26
-        height: 14
+        x: 175
+        y: 4
+        width: 24
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -805,12 +805,12 @@ TextureImporter:
       name: tilemap-characters_26
       rect:
         serializedVersion: 2
-        x: 202
-        y: 3
-        width: 20
-        height: 15
+        x: 203
+        y: 4
+        width: 18
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,7 +827,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 98fc1ae76a71abe44ae8212da9c0c629
     internalID: 0
     vertices: []
     indices: 
@@ -835,7 +835,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       tilemap-characters_0: 2575815558344410250
       tilemap-characters_1: -5481721873124560896

@@ -9,6 +9,7 @@ TagManager:
   - Damage
   - Key
   - KeyBlock
+  - Heart
   layers:
   - Default
   - TransparentFX
