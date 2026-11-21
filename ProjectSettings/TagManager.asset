@@ -10,6 +10,11 @@ TagManager:
   - Key
   - KeyBlock
   - Heart
+  - Ground
+  - Enemy
+  - ActivationBlock
+  - Mushroom
+  - Win
   layers:
   - Default
   - TransparentFX
