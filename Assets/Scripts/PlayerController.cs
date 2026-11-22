@@ -100,10 +100,12 @@ public class PlayerController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision != null) {
             if (collision.collider.CompareTag("Kill")) {
+                AudioManager.instance.PlaySFX("Lose");
                 SCManager.instance.LoadScene("DieScene");
             }
 
             if (collision.collider.CompareTag("Damage")) {
+                AudioManager.instance.PlaySFX("Hit");
                 hitsLeft--;
                 updateHitText();
             }
@@ -137,6 +139,7 @@ public class PlayerController : MonoBehaviour {
             }
 
             if (collision.CompareTag("Key")) {
+                AudioManager.instance.PlaySFX("CollectKey");
                 GameObject keyBlockObject = GameObject.FindGameObjectWithTag("KeyBlock");
                 Destroy(keyBlockObject);
                 Destroy(collision.gameObject);
@@ -144,6 +147,7 @@ public class PlayerController : MonoBehaviour {
             }
 
             if (collision.CompareTag("Heart") && hitsLeft < 3) {
+                AudioManager.instance.PlaySFX("Heart");
                 hitsLeft++;
                 updateHitText();
                 Destroy(collision.gameObject);
