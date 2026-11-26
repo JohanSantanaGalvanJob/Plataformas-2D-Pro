@@ -9,6 +9,10 @@ public class CameraController : MonoBehaviour {
     public float cameraPosXMin;
     public float cameraPosXMax;
 
+    public float cameraPosY;
+    public float cameraPosYMin;
+    public float cameraPosYMax;
+
     void Start() {
         AudioManager.instance.PlayMusic("MainTheme");
     }
@@ -16,7 +20,8 @@ public class CameraController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         cameraPosX = Mathf.Clamp(player.transform.position.x, cameraPosXMin, cameraPosXMax);
-        transform.position = new Vector3(cameraPosX, transform.position.y, transform.position.z);
+        cameraPosY = Mathf.Clamp(player.transform.position.y,cameraPosYMin,cameraPosYMax);
+        transform.position = new Vector3(cameraPosX, cameraPosY, transform.position.z);
 
     }
 }

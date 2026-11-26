@@ -15,6 +15,9 @@ TagManager:
   - ActivationBlock
   - Mushroom
   - Win
+  - Rope
+  - Prize
+  - HeartImage
   layers:
   - Default
   - TransparentFX

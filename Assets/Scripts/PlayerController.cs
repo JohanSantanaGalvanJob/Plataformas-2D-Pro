@@ -27,11 +27,11 @@ public class PlayerController : MonoBehaviour {
     public Sprite newSprite;
 
     [SerializeField] private GameObject[] mushrooms;
+    [SerializeField] private GameObject[] heartImages;
 
     private void Start() {
         totalCoins = GameObject.FindGameObjectsWithTag("Coin").Length;
         updateCoinText();
-        updateHitText();
     }
     private void Update() {
         float xMotion = Input.GetAxisRaw("Horizontal");
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
         Vector2 speedVector = new Vector2(xMotion * motionVelocity, rb.linearVelocityY);
         GetComponent<Rigidbody2D>().linearVelocity = speedVector;
 
-        if (Input.GetKeyDown(KeyCode.Space) && jump) {
+        if (Input.GetKeyDown(KeyCode.LeftControl) && jump) {
             jump = false;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpParticles.Play();
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour {
         if (raycastHit2D.collider != null) {
             if (GetComponent<Rigidbody2D>().linearVelocityX != 0) SetAnimation("running");
             else SetAnimation("idle"); // Si está sobre una superficie pero no se mueve
-            if (raycastHit2D.collider.gameObject.CompareTag("Ground")) {
+            if (raycastHit2D.collider.gameObject.CompareTag("Ground") || raycastHit2D.collider.gameObject.CompareTag("Damage") || raycastHit2D.collider.gameObject.CompareTag("Mushroom")) {
                 jump = true;
             }
             jump = true;
@@ -104,10 +104,10 @@ public class PlayerController : MonoBehaviour {
                 SCManager.instance.LoadScene("DieScene");
             }
 
-            if (collision.collider.CompareTag("Damage")) {
+            if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy")) {
                 AudioManager.instance.PlaySFX("Hit");
+                heartImages[hitsLeft-1].gameObject.SetActive(false);
                 hitsLeft--;
-                updateHitText();
             }
 
             if (collision.collider.CompareTag("ActivationBlock") && mushroomActivated == false) {
@@ -122,6 +122,15 @@ public class PlayerController : MonoBehaviour {
             }
 
             if (collision.collider.CompareTag("Win")) {
+                if (hitsLeft == 3 && coinsCollected == totalCoins) {
+                    GameResults.rank = "A";
+                } else if (hitsLeft != 3 && coinsCollected == totalCoins) {
+                    GameResults.rank = "B";
+                } else if (hitsLeft == 3 && coinsCollected != totalCoins) {
+                    GameResults.rank = "B";
+                } else if (hitsLeft != 3 && coinsCollected != totalCoins) {
+                    GameResults.rank = "C";
+                }
                 SCManager.instance.LoadScene("VictoryScene");
 
             }
@@ -148,8 +157,8 @@ public class PlayerController : MonoBehaviour {
 
             if (collision.CompareTag("Heart") && hitsLeft < 3) {
                 AudioManager.instance.PlaySFX("Heart");
+                heartImages[hitsLeft].gameObject.SetActive(true);
                 hitsLeft++;
-                updateHitText();
                 Destroy(collision.gameObject);
             }
 
@@ -157,11 +166,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void updateCoinText() {
-        txtCoins.text = coinsCollected.ToString() + "/" + totalCoins.ToString() + " Coins";
-    }
-
-    private void updateHitText() {
-        txtHits.text = hitsLeft.ToString() + " Hits";
+        txtCoins.text = coinsCollected.ToString() + "/" + totalCoins.ToString();
     }
 
 }

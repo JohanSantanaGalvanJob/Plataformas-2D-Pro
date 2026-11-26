@@ -1,16 +1,12 @@
+
 using UnityEngine;
 
-public class PlayGame : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+public class PlayGame : MonoBehaviour {
+    public void GoToGame() {
+        SCManager.instance.LoadScene("GameScene");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void GoToMenu() {
+        SCManager.instance.LoadScene("MenuScene");
     }
 }
